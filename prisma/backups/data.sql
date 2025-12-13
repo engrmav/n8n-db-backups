@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict aKm3BLVrrV51NCDgbSOFcWgOhcPZiJly2DU5WfISZ8Fo0Iip0fQvXYePMGfT09u
+-- \restrict 29bPacp8PiaI9lCGasvv6V55PQkcpYjAoc0T1eiWkewjIqCIUCvb7tC8vv2Mr7L
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.6
@@ -106,6 +106,14 @@ COPY "auth"."mfa_challenges" ("id", "factor_id", "created_at", "verified_at", "i
 --
 
 COPY "auth"."oauth_authorizations" ("id", "authorization_id", "client_id", "user_id", "redirect_uri", "scope", "state", "resource", "code_challenge", "code_challenge_method", "response_type", "status", "authorization_code", "created_at", "expires_at", "approved_at", "nonce") FROM stdin;
+\.
+
+
+--
+-- Data for Name: oauth_client_states; Type: TABLE DATA; Schema: auth; Owner: supabase_auth_admin
+--
+
+COPY "auth"."oauth_client_states" ("id", "provider_type", "code_verifier", "created_at") FROM stdin;
 \.
 
 
@@ -1202,6 +1210,6 @@ SELECT pg_catalog.setval('"public"."migrations_id_seq"', 101, true);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict aKm3BLVrrV51NCDgbSOFcWgOhcPZiJly2DU5WfISZ8Fo0Iip0fQvXYePMGfT09u
+-- \unrestrict 29bPacp8PiaI9lCGasvv6V55PQkcpYjAoc0T1eiWkewjIqCIUCvb7tC8vv2Mr7L
 
 RESET ALL;
