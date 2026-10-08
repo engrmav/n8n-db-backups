@@ -4,7 +4,7 @@ SET session_replication_role = replica;
 -- PostgreSQL database dump
 --
 
--- \restrict VyhvZ2k9ReFYLdPBKbwd5vh7syliRgQaFNau3oongNUgWQVsobnY7KZycNck8Sw
+-- \restrict MYf1xkB5X6gMHDHULgg3Xnk9dE3ojwq695xxaGGX7woz2mbeZ3b5m3cTJU3bw9q
 
 -- Dumped from database version 17.6
 -- Dumped by pg_dump version 17.11
@@ -1266,6 +1266,6 @@ SELECT pg_catalog.setval('"public"."migrations_id_seq"', 101, true);
 -- PostgreSQL database dump complete
 --
 
--- \unrestrict VyhvZ2k9ReFYLdPBKbwd5vh7syliRgQaFNau3oongNUgWQVsobnY7KZycNck8Sw
+-- \unrestrict MYf1xkB5X6gMHDHULgg3Xnk9dE3ojwq695xxaGGX7woz2mbeZ3b5m3cTJU3bw9q
 
 RESET ALL;
